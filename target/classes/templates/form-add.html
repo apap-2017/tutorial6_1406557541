@@ -1,15 +1,11 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org">
-<head>
-
-<title>Add student</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head th:replace="fragments/header :: title">
 </head>
-
 <body>
-
-	<h1 class="page-header">Problem Editor</h1>
+	<div th:replace="fragments/header"></div>
+	<h3 class="col-lg-10 my-4">Problem Editor</h3>
 
 	<form action="/student/add/submit" method="get">
 		<div>
@@ -28,6 +24,5 @@
 	</form>
 
 </body>
-
 </html>
 

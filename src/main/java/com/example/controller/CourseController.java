@@ -21,6 +21,7 @@ public class CourseController {
 
 		if (course != null) {
 			model.addAttribute("course", course);
+			model.addAttribute("title","View Course");
 			return "view-course";
 		} else {
 			model.addAttribute("id_course", id_course);

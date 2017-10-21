@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<title>View Course by Id Course</title>
+<head th:replace="fragments/header :: title">
 </head>
 <body>
+	<div th:replace="fragments/header"></div>
 	<h3 th:text="'ID = ' + ${course.id_course}">ID Course</h3>
 	<h3 th:text="'Name = ' + ${course.name}">Course Name</h3>
 	<h3 th:text="'Credits = ' + ${course.credits}">Course Credits</h3>
